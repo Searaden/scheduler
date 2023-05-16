@@ -33,10 +33,10 @@ $(function () {
   $(".time-block").each(function () {
     var id = $(this).attr("id"); 
     var description = localStorage.getItem(id); 
-    var textarea = $(this).find(".description");
+    var text = $(this).find(".description");
 
     if (description) {
-      textarea.val(description); // Set the value of the textarea to the retrieved description
+      text.val(description); // Set the value of the textarea to the description in local storage
     }
   });
 
